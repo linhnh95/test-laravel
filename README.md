@@ -30,8 +30,13 @@ Running
 Running
 ``php artisan serve``
 
-
 ### Step 7
+
+Running
+``php artisan storage:link``
+
+
+### Step 8
 
 Login with 
 
@@ -39,7 +44,7 @@ Account: `root@root.com`
 Password: `123456`
 
 
-### Step 8
+### Step 9
 
 Testing with script
 ``php artisan test``
