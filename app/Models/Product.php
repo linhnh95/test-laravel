@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $guarded = ['id'];
+
+    protected $appends = ['main_image'];
+
     use HasFactory;
 
     public function brand()
@@ -17,5 +21,14 @@ class Product extends Model
     public function images()
     {
         return $this->hasMany(Image::class, 'product_id');
+    }
+
+    public function getMainImageAttribute()
+    {
+        $images = $this->images() ?? [];
+        if (empty($images)) {
+            return "";
+        }
+        return $images->where('is_main', 1)->first();
     }
 }
