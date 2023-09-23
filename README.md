@@ -1,3 +1,29 @@
+# Test Laravel project
+
+#### Use `laravel blade` to complete run on the environment `PHP ^8.1`
+
+#### List Product : `` /products``
+
+#### Product Details: `` /products/:id``
+
+#### Login: ``/login``
+
+#### Manage Product: ``/manage``
+
+#### Create Product: ``/manage/create``
+
+#### Update Product: ``/manage/update/:id``
+
+
+In the project, `Caching` and `Session` are used
+
+Have written ``Unit tests`` for productRepository
+
+
+
+
+# Running
+
 ### Step 1
 Open Terminal
 
